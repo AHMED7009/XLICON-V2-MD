@@ -3,17 +3,17 @@ import { download } from 'aptoide-scraper';
 let handler = async (m, { conn, usedPrefix: prefix, command, text }) => {
   try {
     if (command === 'modapk') {
-      if (!text) throw `*[❗] Please provide the APK Name you want to download.*`;
+      if (!text) throw `*[❗] ارسل اسم التطبيق لتحميله*`;
 
       await conn.reply(m.chat, global.wait, m);
       let data = await download(text);
 
-      if (data.size.replace(' MB', '') > 200) {
-        return await conn.sendMessage(m.chat, { text: '*[⛔] The file is too large.*' }, { quoted: m });
+      if (data.size.replace(' MB', '') > 20000) {
+        return await conn.sendMessage(m.chat, { text: '*[😩] حجم التطبيق كبير جدا.*' }, { quoted: m });
       }
 
       if (data.size.includes('GB')) {
-        return await conn.sendMessage(m.chat, { text: '*[⛔] The file is too large.*' }, { quoted: m });
+        return await conn.sendMessage(m.chat, { text: '*[😩] حجم التطبيق كبير جدا.*' }, { quoted: m });
       }
 
       await conn.sendMessage(
@@ -23,7 +23,7 @@ let handler = async (m, { conn, usedPrefix: prefix, command, text }) => {
       )
     }
   } catch {
-    throw `*[❗] An error occurred. Make sure to provide a valid link.*`;
+    throw `*[❗] تعذر تحميل التطبيق.*`;
   }
 };
 

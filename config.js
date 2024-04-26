@@ -55,11 +55,11 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.botname = 'XLICON-V2'
+global.botname = '𝑨𝑳𝑲𝑨𝑺𝑬𝑹↝𝑴𝑫'
 global.premium = 'true'
-global.packname = 'XLICON TEAM' 
-global.author = '@XLICON-V2' 
-global.menuvid = 'https://telegra.ph/file/325630f66abc968eda8e2.mp4'
+global.packname = '𝑨𝑳𝑲𝑨𝑺𝑬𝑹' 
+global.author = '𝑨𝑳𝑳𝑨𝑺𝑬𝑹' 
+global.menuvid = 'https://telegra.ph/file/f4ad6cd30c8cee9a878e0.jpg'
 global.igfg = '▢✓ Follow My channel\nhttps://whatsapp.com/channel/0029VaE8GbCDzgTILE7OtC3e\n' 
 global.dygp = 'https://chat.whatsapp.com/BfH0KLkICn2BjmGFMRcGMW'
 global.fgsc = 'https://github.com/salmanytofficial/XLICON-V2-MD' 
@@ -69,7 +69,7 @@ global.fglog = 'XLICON.jpg'
 global.thumb = fs.readFileSync('./XLICON.jpg')
 
 
-global.wait = '*🕣 _XLICON IS LOADIND..._*\n*▰▰▰▱▱▱▱▱⭐*'
+global.wait = '*🕣 _جاري التنزيل_*\n*▰▰▰▱▱▱▱▱⭐*'
 global.rwait = '⌛'
 global.dmoji = '🤭'
 global.done = '✔️'
